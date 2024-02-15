@@ -1,7 +1,8 @@
 % Gauss Elimination Level 5
 % 240215
+% Leading Entry가 1인 RREF를 수행하도록 코드를 수정함.
 
-clear;
+clear; clc;
 
 % Example Matrix (수치해석 기말고사 2번 문제)
 M = [1 1 0 0 0 4;
