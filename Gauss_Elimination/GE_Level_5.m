@@ -1,7 +1,7 @@
 % Gauss Elimination Level 5
 % 240215
 % Leading Entry가 1인 RREF를 수행하도록 코드를 수정함.
-% 비대각원소가 0인 경우 계산을 하지 않도록 하여 코드 효율성 개선.
+% 비대각원소가 0인 경우 계산을 생략하도록 하여 코드 효율성을 개선함.
 
 clear; clc;
 
