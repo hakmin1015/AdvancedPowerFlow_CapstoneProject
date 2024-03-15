@@ -19,18 +19,33 @@ function [matrix, init_A] = input_Matrix()
     %         0 0 16 4 1 5;
     %         0 0 64 8 1 2;
     %         1 0 -8 -1 0 0];
+
     % matrix = [3 8 1 ; 5 2 0; 6 1 12];
+
     % matrix = [10 5 6; 2 9 3];   % Augmented Matrix (Power System Analysis and Design 6th ed. EX 6.3)
+
     % matrix = [5 1 1 1;
     %           1 4 1 2;
     %           2 3 6 3];
     % https://www.emathhelp.net/en/calculators/linear-algebra/gauss-jordan-elimination-calculator/?i=%5B%5B5%2C1%2C1%2C1%5D%2C%5B1%2C4%2C1%2C2%5D%2C%5B2%2C3%2C6%2C3%5D%5D&reduced=on
-    matrix = [5 1 0 0 0 1;
-              1 6 1 0 0 2;
-              0 1 7 1 0 3;
-              0 0 1 8 1 4;
-              0 0 0 1 9 5];
+    
+    % matrix = [5 1 0 0 0 1;
+    %           1 6 1 0 0 2;
+    %           0 1 7 1 0 3;
+    %           0 0 1 8 1 4;
+    %           0 0 0 1 9 5];
     % https://www.emathhelp.net/en/calculators/linear-algebra/gauss-jordan-elimination-calculator/?i=%5B%5B5%2C1%2C0%2C0%2C0%2C1%5D%2C%5B1%2C6%2C1%2C0%2C0%2C2%5D%2C%5B0%2C1%2C7%2C1%2C0%2C3%5D%2C%5B0%2C0%2C1%2C8%2C1%2C4%5D%2C%5B0%2C0%2C0%2C1%2C9%2C5%5D%5D&reduced=on
+
+    matrix = [10 1 1 1 0 0 0 0 0 1;
+              1 11 1 1 1 0 0 0 0 2;
+              0 1 12 1 1 1 0 0 0 3;
+              0 0 1 13 1 1 1 0 0 4;
+              0 0 0 1 14 1 1 1 0 5;
+              0 0 0 0 1 15 1 1 1 6;
+              0 0 0 0 0 1 16 1 1 7;
+              0 0 0 0 0 0 1 17 1 8;
+              0 0 0 0 0 0 0 1 18 9];
+    % https://www.emathhelp.net/en/calculators/linear-algebra/gauss-jordan-elimination-calculator/?i=%5B%5B10%2C1%2C1%2C1%2C0%2C0%2C0%2C0%2C0%2C1%5D%2C%5B1%2C11%2C1%2C1%2C1%2C0%2C0%2C0%2C0%2C2%5D%2C%5B0%2C1%2C12%2C1%2C1%2C1%2C0%2C0%2C0%2C3%5D%2C%5B0%2C0%2C1%2C13%2C1%2C1%2C1%2C0%2C0%2C4%5D%2C%5B0%2C0%2C0%2C1%2C14%2C1%2C1%2C1%2C0%2C5%5D%2C%5B0%2C0%2C0%2C0%2C1%2C15%2C1%2C1%2C1%2C6%5D%2C%5B0%2C0%2C0%2C0%2C0%2C1%2C16%2C1%2C1%2C7%5D%2C%5B0%2C0%2C0%2C0%2C0%2C0%2C1%2C17%2C1%2C8%5D%2C%5B0%2C0%2C0%2C0%2C0%2C0%2C0%2C1%2C18%2C9%5D%5D&reduced=on
 
     [rows, ~] = size(matrix);
 

@@ -1,7 +1,7 @@
-% 240302
-% Jacobi Method : iterative solution to linear algebraic equations
+% 240310
+% Gauss-Seidel Method : iterative solution to linear algebraic equations
 
-function Jacobi_Method(D_Inv, D, A)
+function Gauss_Seidel_Method(D_Inv, D, A)
     
     [rows, ~] = size(A);
     AA = zeros(rows);       % not Augmented Matrix
@@ -34,7 +34,7 @@ function Jacobi_Method(D_Inv, D, A)
     
     end
     
-    fprintf('=========================Jacobi Solution=========================\n\n')
+    fprintf('=========================Gauss-Seidel Solution=========================\n\n')
     
     for k = 1:i
         fprintf('<Iteration %d>\n', k-1);

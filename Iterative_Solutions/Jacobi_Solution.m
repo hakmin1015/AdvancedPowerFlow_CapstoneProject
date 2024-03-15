@@ -4,6 +4,7 @@
 
 clear; clc;
 
+tic
 [A, init_A] = input_Matrix();   % 행렬을 입력받음    
 % A -> Augmented / init_A -> not Augmented
 
@@ -15,3 +16,4 @@ clear; clc;
 D_Inv = inverse_Matrix(L_Mat, U_Mat, P, D);        % D의 역행렬을 구하기 위한 절차3
 
 Jacobi_Method(D_Inv, D, A);        % Jacobi Method를 통한 해 구하기
+toc
