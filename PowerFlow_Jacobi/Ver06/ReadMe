@@ -1,2 +1,4 @@
+Bus Switching Test according to PV Bus' Q_G convergence value
+
 Q_G의 수렴값이 limit 초과 시 PV Bus를 PQ Bus로 전환하여 재계산하도록 수정함.
 Jacobi_Method.m 파일에 limit을 벗어나도록 임시 Code를 추가하여 Test를 진행함.
