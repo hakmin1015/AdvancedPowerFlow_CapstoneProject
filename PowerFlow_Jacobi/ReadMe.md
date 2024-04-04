@@ -1,4 +1,5 @@
-###Jacobi Method를 이용한 Power Flow Calculation 구현
+### Jacobi Method를 이용한 Power Flow Calculation 구현
+
 <br/>
 Ver01-03 : Fundamentals of Power Flow Solution using Jacobi Method
 <br/>
