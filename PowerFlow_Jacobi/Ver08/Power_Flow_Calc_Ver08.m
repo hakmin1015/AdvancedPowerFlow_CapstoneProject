@@ -12,7 +12,7 @@ clear; clc;
 format short
 
 % ITERATION = input('Iteration Limit : ');
-ITERATION = 300;      % [Iteration-1] of Repeat
+ITERATION = 500;      % [Iteration-1] of Repeat
 
 % thd = input(Threshold Value of Approximate Relative Error[%] : ");
 thd = 0.01;        % Percent[%]
