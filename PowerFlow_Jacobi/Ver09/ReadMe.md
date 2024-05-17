@@ -1,3 +1,3 @@
-- PV -> PQ로 Bus Switching이 되더라도 PV Bus의 원래 전압을 유지해야 함.
+- 주의) PV -> PQ로 Bus Switching이 되더라도 PV Bus의 원래 전압을 유지해야 함. (IEEE 14 Bus System's 6,8 Bus)
 - Line Flow Data를 계산하는 코드를 추가하였음.
 - 모든 Raw Data에서 코드가 정상적으로 동작함을 확인함.
