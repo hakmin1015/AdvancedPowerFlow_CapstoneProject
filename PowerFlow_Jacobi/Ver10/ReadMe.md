@@ -1,1 +1,2 @@
-
+- 코드 최적화를 진행함(알고리즘 및 가독성 향상).
+- Future Works : Transformer Tap 반영 등
