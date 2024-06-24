@@ -69,7 +69,7 @@ function [BusOutputData,LineOutputData] = Prt_Result(i,ITERATION,SIZE,Y,err_V,V,
 
     if x == 0 & n == 0
         fprintf('프로그램을 종료합니다.\n');
-    elseif (x<1 | x>14) | (n<0 | n>i)
+    elseif (x<1 | x>SIZE) | (n<0 | n>i)
         fprintf('정보를 잘못 입력하였습니다. 프로그램을 종료합니다.\n');
     else
         fprintf('\n<%d모선의 %d번째 iteration 결과>\n',x,n);
